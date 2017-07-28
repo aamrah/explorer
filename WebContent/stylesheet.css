@@ -1,0 +1,51 @@
+#img1{
+
+	margin: auto;/*150px 200px 200px 400px;*/
+	display:block;
+	
+}
+
+body{
+	
+	background-image:url("images/FB_IMG_1459027750895.jpg");
+	background-size:1500px 900px;
+	background-repeat:no-repeat;
+	background-opacity:0.5;
+	
+	
+}
+section{
+	height:700px;
+	
+}
+input{
+	border:2px solid black ;
+	border-radius:1px;
+}
+input[type=submit]{
+	height:25px;
+	width:100px;
+	text-align:center;
+	background-color:#F8F8FF ;
+	border:2px solid black ;
+	border-radius:5px;
+	text-decoration-color:red;
+
+}
+
+
+
+h2{
+	margin-top:50px ;
+	text-align:center;
+}
+
+form{
+	
+	margin:-250px 300px 200px 300px;
+	
+	text-align:center;
+	
+}
+
+

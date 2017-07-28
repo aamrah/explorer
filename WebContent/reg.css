@@ -1,0 +1,53 @@
+
+body{
+	background-image:url("images/FB_IMG_1462372417725.jpg");
+	background-repeat:no-repeat;
+	background-size:1500px 900px;
+
+}
+input{
+	border:2px solid black ;
+	border-radius:1px;
+}
+input[type=submit]{
+	height:25px;
+	width:100px;
+	text-align:center;
+	background-color:#F8F8FF ;
+	border:1px solid black;
+	border-radius:5px;
+	text-decoration-color:red;
+	float:right;
+	webkit-box-shadow: 4px 4px 7px #8B4513;
+-moz-box-shadow: 4px 4px 7px #8B4513;
+box-shadow: 4px 4px 7px #8B4513;
+ 
+	
+}
+
+h2{
+	margin-top:50px ;
+	text-align:center;
+}
+
+form{
+	
+	margin:-250px 300px 200px 300px;
+
+	text-align:center;
+	
+}
+section{
+	height:700px;
+	
+	
+}
+table{
+		margin:auto;
+		border:1px solid black;
+		-webkit-box-shadow: 4px 4px 7px #8B4513;
+		-moz-box-shadow: 4px 4px 7px #8B4513;
+		box-shadow: 4px 4px 7px #8B4513;
+		border: 7px solid #FFE4B5;
+}
+

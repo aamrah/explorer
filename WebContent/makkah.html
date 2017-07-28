@@ -1,0 +1,129 @@
+
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="main.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<script type="text/javascript" src="home.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<style>
+      #location {
+        height:500px;
+        width:700px;
+        margin: 20px;
+        padding: 10px;
+       margin-left:150px;
+      }
+      #map {
+        height: 100%;
+      }
+      nav>form{
+	
+	margin-top:55px;
+	float:right;
+	margin-left:20px;
+	
+}
+section{
+}
+section>div{
+
+  padding: 10px;
+  margin: 30px;
+ 
+  width:1000px;
+    }
+    h1:first-letter{
+		color:red;
+		text-transform: uppercase;
+	}
+    </style></head>
+<body>
+
+<header > 
+<div class = "row">
+<a href="home.html"><img id="logo"class="col-sm-2" src="images/cooltext190260875839452.gif"></a>
+
+<nav class="col-sm-8 text-right">
+
+<nav class="col-sm-8 text-right">
+
+<p><a href="cities.jsp">CITIES </a></p>
+<form method="POST" action="search.jsp">
+<input type="text" name="city" placeholder="Search City" required>
+<input type="submit" value ="Go!"> 
+</form>
+<p><strong><a href="logout.jsp" >Logout?</a></strong></p>
+
+</nav>
+
+</div>
+
+</header>
+
+<section>
+
+ <div>
+ 	<div id="content">
+ <h1>Makkah</h1> <h4></h4><br>
+ 	<h2>Introduction</h2>
+
+	<p>
+Mecca or Makkah , located in western HYPERLINK "http://wikitravel.org/en/Saudi_Arabia"Saudi Arabia, is the holiest city in Islam. It is strictly forbidden for Non-Muslims to enter the city and this is strongly enforced. Road signs to guide non-Muslims are provided. During prayer times, streets near the Sacred Mosque may get crowded with mosquegoers due to most Muslims having a preference for praying at the Sacred Mosque.
+</p>
+<p>
+A pilgrimage to Mecca, known as the HYPERLINK "http://wikitravel.org/en/Hajj"Hajj, is one of the Five Pillars of Islam, and thus obligatory for all Muslims with the physical and financial ability to make it. Over three million Muslims visit the city during the month of Dhu'l-Hijjah yearly. Visits outside this month are known as minor pilgrimages or Umrah, and while not compulsory are strongly encouraged. This is also the place where the Prophet Muhammad was born. Mecca also has a very rich history as it is a very old city which has been considered sacred since the early middle ages. It is also the birthplace of Islam and is the most sacred place for Muslims.
+</p>	
+
+	<h2>Geography & Location</h2>
+	<div id="location">
+ 	<div id="map"></div>
+    <script>
+      
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: {lat: 21.422510,lng:39.826168}
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDud6AuQ83g4dVhz7aA0eAa4RTNqWTLTLo&callback=initMap"
+    async defer>
+    </script>
+ </div>
+ 
+ <h2>Places to see</h2>
+
+<p>Most visitors to Mecca follow the set itinerary of the Hajj. Major sites include:</p>
+<p><strong>Sacred Mosque (al-Masjid al-Haram).</strong> The holiest site in Mecca and Islam. This mosque is built around the Kaaba.</p>
+<p><strong>Kaaba.</strong> At the center of the sacred mosque is this building, said to have been built by Prophet Abraham himself and his son, Prophet Ishmael. Covered in black cloth, it is circled seven times by Muslim pilgrims.
+</p><p>In addition to Makkah, sites involving Hajj include
+</p><p><strong>Mina.</strong> The site of the symbolic stoning of the Devil.
+</p><p><strong>Muzdalifah </strong>The desert where the pilgrims spend the night.
+</p><p><strong>Hill of Arafat and Jabal Rahma.</strong> The site of Prophet Muhammad's last sermon.
+</p><p>J<strong>abal Al Noor (lit. The Mountain of Light).</strong> While its not part of the Hajj ritual this is still an important site; since atop this mountain is the famous Her'aa grotto, where Muslims believe Muhammed first had the Quran revealed to him.
+</p><p><strong>Jabal Al Thur.</strong> This is the cave in which Prophet Muhammed hid in as he made Hijra to Yathrib (Medina) while being pursued by Meccans who were going to kill him. According to legend, the cave entrance was blocked by a spider which had cast a web to cover it.
+</p><p><strong>Masjid e Taneem.</strong> This is a mosque which acts as a Miqat (boundary for Umrah) for people who have already just been in Makkah.
+</p><p>It is situated on the old road connecting old Jeddah to Makkah. It's currently known as al-Syumaisi. This is the place where the famous 'Hudaibiyah Treaty' took place between the Muslims from Madinah led by Prophet Muhammed and the Quraish from Makkah. There is new masjid built next to the ruins of the old masjid.
+</p><p><strong>Jannat ul Mualla. </strong>This is the cemetary in which companions during the time of Prophet Muhammed are buried.
+</p><p><strong>Ja'aronah.</strong>
+Abraj Al Bait (also known as the Mecca Royal Hotel Clock Tower)- opened in 2012 complex that's the centerpiece of a hotel and services complex. It definitely makes for an imposing sight as it towers over the pilgrims inside the mosque. It has a gigantic clock at the top, the tower also includes an Islamic Museum and a Lunar Observation Center. The tower is a part of project that aims to modernize the city in catering to its pilgrims.
+</p>	
+ 
+ 	
+ </div>
+ 
+ 
+  
+</section>
+
+
+
+
+<footer>
+<div class="row">
+  <div id="foot"> <small> &copy; 2016 Explorer</small> </div>
+
+</div>
+</footer>
+</body>
+</html>

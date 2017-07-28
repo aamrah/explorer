@@ -1,0 +1,105 @@
+
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="main.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<script type="text/javascript" src="home.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<style>
+      #location {
+        height:500px;
+        width:700px;
+        margin: 20px;
+        padding: 10px;
+       margin-left:150px;
+      }
+      #map {
+        height: 100%;
+      }
+      nav>form{
+	
+	margin-top:55px;
+	float:right;
+	margin-left:20px;
+	
+}
+section{
+}
+section>div{
+
+  padding: 10px;
+  margin: 30px;
+ 
+  width:1000px;
+    }
+    h1:first-letter{
+		color:red;
+		text-transform: uppercase;
+	}
+    </style></head>
+<body>
+
+<header > 
+<div class = "row">
+<a href="home.html"><img id="logo"class="col-sm-2" src="images/cooltext190260875839452.gif"></a>
+
+<nav class="col-sm-8 text-right">
+
+<p><a href="cities.jsp">CITIES </a></p>
+<form method="POST" action="search.jsp">
+<input type="text" name="city" placeholder="Search City" required>
+<input type="submit" value ="Go!"> 
+</form>
+<p><strong><a href="logout.jsp" >Logout?</a></strong></p>
+
+</nav>
+
+</div>
+
+</header>
+
+<section>
+
+ 	<div id="content">
+ <h1>Jizan</h1> <h4></h4><br>
+ 	<h2>Introduction</h2>
+ 	<p>Jizan is a city in the Asir region of Saudi Arabia.</p>
+ 	<p>Jazan has a hot desert climate (Köppen: BWh) with an average annual temperature above 30 °C (86 °F). The weather is very hot all year round and its average annual temperature is one of the hottest in the world, even in its short winters.
+It is very humid but parched in some months, making the weather very oppressive.</p>
+	 <h2>Geography & Location</h2>
+    <div id="location">
+ 	<div id="map"></div>
+    <script>
+      
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: {lat: 16.8893586,lng:42.57056740000007}
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDud6AuQ83g4dVhz7aA0eAa4RTNqWTLTLo&callback=initMap"
+    async defer>
+    </script>
+ </div>	
+ </div>  
+    
+ 
+
+</div>
+
+ 
+  
+</section>
+
+
+
+
+<footer>
+<div class="row">
+  <div id="foot"> <small> &copy; 2016 Explorer</small> </div>
+
+</div>
+</footer>
+</body>
+</html>

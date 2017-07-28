@@ -1,0 +1,17 @@
+body{
+	
+	background-image:url("1619726.jpg");
+}
+h1{
+	text-align:center;
+	color:#D3D3D3;
+}
+
+img{
+	border-radius:75%;
+	height:150px;
+	width:150px;
+	position:relative;
+	top:250px;
+	left:400px;
+}

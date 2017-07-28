@@ -1,0 +1,71 @@
+body{
+  background-image: -moz-linear-gradient(top, #FFE4B5, #FFFF66);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFE4B5), color-stop(1.0, #FFFF66));
+background-color: #F0E68C;
+  
+}
+section{
+	
+	background-size:cover;
+	height:665px;
+}
+section>div{
+  float:left;
+  padding: 10px;
+  margin: 50px;
+  margin-left:80px;
+  height: 450px;
+  width:1200px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px #A0522D;
+-moz-box-shadow: 0px 0px 16px #A0522D;
+box-shadow: 0px 0px 16px #A0522D;
+  
+}
+#para{
+    color: #D2691E; ;
+}
+
+#btn{
+    height: 50px;
+    width: 100px;
+    position: relative;
+    top: 10px;
+    margin: 20px;
+    float: right;
+}
+.col-sm-2{
+border-radius:1px;
+
+}
+#i1{
+      display: inline-block;
+    height:430px;
+    
+    float: right;
+}
+#i1:hover{
+  opacity: 0.95;
+  transform:scale(1.02);
+  transition: opacity 1s ease-in,transform 2s ease-out;
+  border: 2px solid #B22222;
+}
+aside{
+	height:400px;
+}
+
+.container{
+	 padding: 10px;
+  margin: 30px;
+  height: 400px;
+  width:1000px;
+}
+section{
+	height:700px;
+	
+}
+
+.slider{
+	background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/feature-gradient-transparent.png') center center no-repeat;
+ 
+}

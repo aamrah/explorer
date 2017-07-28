@@ -1,0 +1,106 @@
+
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="main.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<script type="text/javascript" src="home.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<style>
+     #location {
+        height:500px;
+        width:700px;
+        margin: 20px;
+        padding: 10px;
+       margin-left:150px;
+      }
+      #map {
+        height: 100%;
+      }
+      nav>form{
+	
+	margin-top:55px;
+	float:right;
+	margin-left:20px;
+	
+}
+section{
+}
+section>div{
+
+  padding: 10px;
+  margin: 30px;
+ 
+  width:1000px;
+    }
+    h1:first-letter{
+		color:red;
+		text-transform: uppercase;
+	}
+    </style></head>
+<body>
+
+<header > 
+<div class = "row">
+<a href="home.html"><img id="logo"class="col-sm-2" src="images/cooltext190260875839452.gif"></a>
+
+<nav class="col-sm-8 text-right">
+
+<p><a href="cities.jsp">CITIES </a></p>
+<form method="POST" action="search.jsp">
+<input type="text" name="city" placeholder="Search City" required>
+<input type="submit" value ="Go!"> 
+</form>
+<p><strong><a href="logout.jsp" >Logout?</a></strong></p>
+
+</nav>
+
+</div>
+
+</header>
+
+<section>
+
+ <div id="content">
+ <h1>Jeddah</h1> <h4></h4><br>
+ 	<h2>Introduction</h2>
+
+	
+Jeddah  is on the Red Sea in western Saudi Arabia. It is the second largest city, with a population of approximately 3,400,000, and a major commercial center in the country.
+
+Jeddah has been a port and trading city for centuries, which is reflected in its cosmopolitan mix of inhabitants. Today, it is a major commercial center in Saudi Arabia. It also has many government offices. Jeddah is known in the kingdom for its shopping districts, restaurants and cafes. It also hosts the Jeddah Corniche (waterfront area), which is the largest in the Kingdom with a great bunch of hotels, beaches and resorts clustered around it. To the north of the city, a string of beach resort compounds are known as party spots where many of the social mores of the rest of the country are flouted, especially by rich, liberal families from Jeddah.
+
+Jeddah is also the main entry point, either by air or sea, for pilgrims making the HYPERLINK "http://wikitravel.org/en/Hajj"Hajj pilgrimage to HYPERLINK "http://wikitravel.org/en/Mecca"Mecca and HYPERLINK "http://wikitravel.org/en/Medina"Medina, the two sacred cities of Islam. Both are a few hours inland from Jeddah
+ 
+ <h2>Geography & Location</h2>
+ <div id="location">
+ 	<div id="map"></div>
+    <script>
+      
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: {lat: 21.543333,lng:39.172777999999994}
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDud6AuQ83g4dVhz7aA0eAa4RTNqWTLTLo&callback=initMap"
+    async defer>
+    </script>
+ </div>	
+ </div>
+ 
+ 
+  
+</section>
+
+
+
+
+<footer>
+<div class="row">
+  <div id="foot"> <small> &copy; 2016 Explorer</small> </div>
+
+</div>
+</footer>
+</body>
+</html>

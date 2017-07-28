@@ -1,0 +1,69 @@
+header{
+	border:1px solid #FFFFFF ;
+	display:inline;
+	border-radius:5px; 
+	color:white;
+	background-color:black;
+	background-size:cover;
+	height:100px;
+	
+}
+
+#logo{
+	position:relative;
+	top:20px;
+}
+
+nav>p{
+    position: relative;
+    top: 50px;
+    margin: 10px;
+}
+nav a{
+	text-decoration :none;
+	height:50px;
+	width:50px;
+	display:inline-block;
+	margin:auto;
+	text-allign:center;
+	border-radius:5px; 
+	color:white;
+	
+}
+nav>p>a:hover{
+    color:#D2691E ;
+}
+a:active{
+	position:relative;
+	top:3px;
+}
+p{
+	display:inline-block;
+}
+
+
+
+aside{
+	float:right;
+	
+	width:300px;
+  	padding: 10px;
+  	margin: 30px;
+  	border-radius: 10px;
+  	-webkit-box-shadow: 0px 0px 10px black;
+	-moz-box-shadow: 0px 0px 10px black;
+	box-shadow: 0px 0px 10px black;
+	
+
+	
+}
+
+#foot{
+	border:1px solid #FFFFFF ;
+	display:block;
+	border-radius:5px; 
+	color:white;
+	background-color:black;
+	background-size:cover;
+
+}

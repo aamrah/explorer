@@ -1,0 +1,102 @@
+
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="main.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<script type="text/javascript" src="home.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<style>
+      #location {
+        height:500px;
+        width:700px;
+        margin: 20px;
+        padding: 10px;
+       margin-left:150px;
+      }
+      #map {
+        height: 100%;
+      }
+      nav>form{
+	
+	margin-top:55px;
+	float:right;
+	margin-left:20px;
+	
+}
+section{
+}
+section>div{
+
+  padding: 10px;
+  margin: 30px;
+ 
+  width:1000px;
+    }
+    h1:first-letter{
+		color:red;
+		text-transform: uppercase;
+	}
+    </style></head>
+<body>
+
+<header > 
+<div class = "row">
+<a href="home.html"><img id="logo"class="col-sm-2" src="images/cooltext190260875839452.gif"></a>
+
+<nav class="col-sm-8 text-right">
+
+<p><a href="cities.jsp">CITIES </a></p>
+<form method="POST" action="search.jsp">
+<input type="text" name="city" placeholder="Search City" required>
+<input type="submit" value ="Go!"> 
+</form>
+<p><strong><a href="logout.jsp" >Logout?</a></strong></p>
+
+</nav>
+
+</div>
+
+</header>
+
+<section>
+
+ <div id="content">
+ <h1>Madinah</h1> <h4></h4><br>
+ 	<h2>Introduction</h2>
+ 	<p>Medina (Madinah) is a city in Saudi Arabia, to the north of Mecca.</p>
+   <p>Medina is the second holiest city of Islam. The Prophet Muhammad migrated to Medina from Mecca, and taught there for some years before his triumphant return to Mecca. The city is commonly visited as part of the HYPERLINK "http://wikitravel.org/en/Hajj"Hajj pilgrimage. The Prophet built the first state or government in this city. Islamic Political Modal i.e (Calipahte or Khilafat), Islamic Economic Modal (interest free, commodity currency i.e. gold and silver coins based system, an alternative to capitalism and socialism) were being implemented for the first time over here.</p>
+ 	<img src="images/FB_IMG_1464805437918.jpg" style="height:50%;width:50% ;margin:auto 200px">
+  
+ 	<h2>Geography & Location</h2>
+ <div id="location">
+ 	<div id="map"></div>
+    <script>
+     
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: {lat: 24.5246542,lng:39.56918410000003}
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDud6AuQ83g4dVhz7aA0eAa4RTNqWTLTLo&callback=initMap"
+    async defer>
+    </script>
+ </div>
+</div>
+
+ 
+  
+</section>
+
+
+
+
+<footer>
+<div class="row">
+  <div id="foot"> <small> &copy; 2016 Explorer</small> </div>
+
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="main.css"/>
+<link type="text/css" rel="stylesheet" href="addCity.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<script type="text/javascript" src="home.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+<header > 
+<div class = "row">
+<a href="home.html"><img id="logo"class="col-sm-2" src="images/cooltext190260875839452.gif"></a>
+
+<nav class="col-sm-8 text-right">
+
+</nav>
+
+</div>
+
+</header>
+
+<section>
+
+<form action= "addCity.jsp" method ="POST" >
+
+<table style="margin:auto">
+<tr><h2 style="text-align:center">Add City</h2><br><br> </tr>
+<tr>
+<tr><td><a href="addNewCity.html" download><button style="float:right" >Download prepared HTML file</button></a></td></tr>
+<td> <b> City : </b> </td>  <td> <input type = "text" name ="city" required> <br> <br> </td>
+</tr>
+<tr>
+<td><b> Associated <strong style="color:white">Hyperlink :</strong> </b> </td><td><input type = "text" name= "alink" required ><br><label>add link after saving it (path:"/demo/WebContent")</label>  <br> <br></td>
+</tr>
+<tr>
+<td><b> Image :<form action="UploadServlet" method="post"
+                        enctype="multipart/form-data">
+<input type="file" name="file" size="50" id="myImage" /></td> </form>
+</tr>
+
+<br />
+
+</form>
+ 
+<tr><td><input type = "submit" ></td></tr>
+
+</table>
+<br><br>
+ 
+</form>
+ 
+
+</section>
+
+
+
+
+<footer>
+<div class="row">
+  <div id="foot"> <small> &copy; 2016 Explorer</small> </div>
+
+</div>
+</footer>
+</body>
+</html>

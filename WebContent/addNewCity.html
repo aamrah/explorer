@@ -1,0 +1,82 @@
+
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="main.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<script type="text/javascript" src="home.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<style>
+      #location {
+        height:500px;
+        width:700px;
+        margin: 20px;
+        padding: 10px;
+      }
+      #map {
+        height: 100%;
+      }
+      nav>form{
+	
+	margin-top:55px;
+	float:right;
+	margin-left:20px;
+	
+}
+    </style></head>
+<body>
+
+<header > 
+<div class = "row">
+<a href="home.html"><img id="logo"class="col-sm-2" src="images/cooltext190260875839452.gif"></a>
+
+<nav class="col-sm-8 text-right">
+
+<p><a href="home.html">HOME </a></p>
+<form method="POST" action="search.jsp">
+<input type="text" name="city" placeholder="Search City" required>
+<input type="submit" value ="Go!"> 
+</form>
+</nav>
+
+</div>
+
+</header>
+
+<section>
+<aside>
+	Add Navigation Details Here!
+ </aside>
+ <div>
+ 	Add Content Here!
+ </div>
+ <div id="location">
+ 	<div id="map"></div>
+    <script>
+      //this function sets properties for the map of the city
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          //change the latitude(lat) and longitude (lng) properties in accordance to the city you plan on adding!
+          center: {lat: 16.8893586,lng:42.57056740000007}//currently centered at jizan!
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDud6AuQ83g4dVhz7aA0eAa4RTNqWTLTLo&callback=initMap"
+    async defer>
+    </script>
+ </div>
+ 
+  
+</section>
+
+
+
+
+<footer>
+<div class="row">
+  <div id="foot"> <small> &copy; 2016 Explorer</small> </div>
+
+</div>
+</footer>
+</body>
+</html>

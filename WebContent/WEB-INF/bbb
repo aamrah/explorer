@@ -1,0 +1,105 @@
+package com.mysql.jdbc;
+
+import java.sql.Connection; //!!!!!!!!!!!!!!
+import java.sql.DriverManager; //!!!!!!!!!!!!
+import java.sql.Statement; //!!!!!!!!!!!!!!!!!
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.sql.ResultSet ;
+//import java.sql..Connection;
+
+//import demo.SQLException;
+
+public class Driver {
+	public static void main(String[] args)
+ 	{
+ 		 String url = "jdbc:mysql://localhost:3306/info" ;
+		 String user = "root";
+		 String pass = "Root123";
+		 try
+		 {
+			 //get connection
+			 Connection co = DriverManager.getConnection(url, user, pass);
+			 
+			 //create an empty statement
+			 Statement st = co.createStatement();
+
+		 }catch(Exception e)
+		 {
+			 e.printStackTrace();
+		 }
+ 	}
+			
+		 String first;
+		 String last;
+		 int date;
+		 String email;
+		 double contact;
+		 String username ;
+		 String password;
+	   	
+		 
+		 Driver(String first,String last,int date, String email, double contact, String username ,String password)
+		 {
+			 
+			this.first =first;
+			this.last=last;
+			this.date =date;
+			this.email=email;
+			this.contact=contact;
+			this.username=username;
+			this.password=password;
+		 }
+		 
+		 Driver(String username ,String password)
+		 {
+			 
+			 this.username = username ;
+			 this.password = password ;
+		 }
+		 
+		 
+		 	
+			
+		 	//method of registering an account
+			void regi()
+			{
+				try
+				{
+				//sql query
+				String sql = "insert into info(first,last,date,email,contact,username,password)" + "values('+first+' , '+last+'  ,'+ date+' , '+ email+' , '+contact+' , '+username+' , '+ password+')" ;
+								
+				//execute query
+				st.executeUpdate(sql) ;
+				}
+				catch (Exception eX)
+				{
+					eX.printStackTrace(); 
+					
+				}
+			}
+			
+			//login verification
+			boolean logi()
+			{
+				//sql query
+				String sql = "'select distinct info'+'where username ='+ x +'and password ='+ y +";
+				
+				//execute query and store result set in myres
+				ResultSet myres = st.executeQuery(sql) ;
+				
+				//if a row exists
+				if(myres.next()==true)
+				{
+					return true ;
+				}
+			
+				return false ;
+			}
+
+		 	
+
+			
+		
+}
